@@ -1,16 +1,23 @@
 #Родительский класс для создания продуктов в магазине
 class Product
-    attr_reader :price, :amount, :name, :genre, :author, :year
-    attr_accessor :price, :amount, :name, :genre, :author
+    attr_accessor :price, :amount
 
     def initialize(params)
         @price = params[:price]
         @amount = params[:amount]
-        @name = params[:name]
-        @genre = params[:genre]
-        @author = params[:author]
-        @year = params[:year]
+        
     end 
-    
+    def to_s
+        "#{@price} руб. (осталось #{@amount})"
+    end
+    def update(params)
+        @price = params[:price] if params[:price]
+        @amount = params[:amount] if params[:amount]
+      end
+
+ # продукт из файла мы прочитать не сможем (мы не знаем, например, формат), поэтому если он не определен у родителя, он будет возвращать ошибку. 
+    def self.from_file(path)      
+        raise "NotImplementedError"
+    end
     
 end
