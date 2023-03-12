@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<products>
+    <product>
+        <type>Книга</type>
+        <article>«Приключения Тома Сойера»</article>
+        <author>Марк Твен</author>
+        <price>1000</price>
+        <amount>5</amount>
+    </product>
+    <product>
+        <type>Книга</type>
+        <article>«Воспоминания Шерлока Холмса»</article>
+        <author>Артур Конан Дойль</author>
+        <price>1100</price>
+        <amount>1</amount>
+    </product>
+    <product>
+        <type>Диск</type>
+        <article>Judas Priest — Ram It Down</article>
+        <author>Heavy Metal</author>
+        <price>550</price>
+        <amount>3</amount>
+    </product>
+    <product>
+        <type>Диск</type>
+        <article>Judas Priest — Turbo</article>
+        <author>(Heavy Metal)</author>
+        <price>500</price>
+        <amount>2</amount>
+    </product>
+    <product>
+        <type>Фильм</type>
+        <article>«Пролетая над грездом кукушки»</article>
+        <author>Милош Форман</author>
+        <price>350</price>
+        <amount>3</amount>
+        <year>1975</year>
+    </product>    
+
+</products>
